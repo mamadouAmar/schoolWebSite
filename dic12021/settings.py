@@ -110,7 +110,7 @@ LANGUAGE_CODE = 'fr'
 LANGUAGES = (("en", 'Anglais'),
              ("fr", 'Francais')
             )
-LOCALE_PATHS = (BASE_DIR / "locale") 
+#LOCALE_PATHS = (BASE_DIR / "locale") 
 
 
 TIME_ZONE = 'UTC'
