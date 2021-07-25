@@ -1,12 +1,15 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="">Navbar</a>
+    {% load static %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand col">
+            <img src=" {% static 'assets/ept_logo.svg' %} " >
+        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse col md-justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-5 ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -35,8 +38,24 @@
                 <li class="nav-item">
                     <a class="nav-link " href="">A propos</a>
                 </li>
+                <li class="nav-item dropdown border-right border-left">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <img src=" {% static 'assets/language.svg' %} ">
+                    </a>
+                    <span class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">
+                            <img src=" {% static 'assets/france_flag.svg' %} ">
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <img src=" {% static 'assets/usa_flag.svg' %} ">
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <img src=" {% static 'assets/german_flag.svg' %} ">
+                        </a>
+                    </span>
+                </li>
             </ul>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Connexion</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Inscription</button>
+            <button class="btn btn-warning text-light my-2 my-sm-0 mr-2" type="submit">Connexion</button>
+            <button class="btn btn-outline-warning my-2 my-sm-0 ml-2" type="submit">Inscription</button>
         </div>
     </nav>

@@ -1,25 +1,25 @@
 {% load static %}
 <!-- Begin Footer -->
-    <footer class="page-footer font-small pt-1 fixed-bottom" style="border: 1px solid black;" >
+    <footer class="page-footer font-small pt-1 fixed-bottom bg-warning">
         <!-- Grid row -->
-        <div class="row" style="border: 1px solid black;" >
+        <div class="row" >
         <!-- Grid column -->
-            <div class="row col-md-4 justify-content-center" style="border: 1px solid black;" >
-                <div class="col-12 ">
-                    <img src=" {% static 'assets/ept_logo.png' %} " alt="ept_image" width=150>
+            <div class="container col-md-auto justify-content-center ml-auto" >
+                <div class="col-12 row justify-content-center">
+                    <img src=" {% static 'assets/ept_logo.svg' %} " alt="ept_image" width=150>
                 </div>
                 <!-- Content -->
-                <div class= "text">
-                © 2021 Copyright: ept.sn
+                <div class= "text-white">
+                2021 Copyright ©| Ecole Polytechnique de Thies
                 </div>
 
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-4" style="border: 1px solid black;" >
+            <div class="container col-md-auto text-white border-right border-left" >
                 <!-- Links -->
-                <h5 class="text">Contacts</h5>
+                <h5 class="text-white">Contacts</h5>
                 <ul class="list-unstyled">
                     <li>
                         Mail : ept@ept.sn
@@ -39,9 +39,12 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-4" style="border: 1px solid black;" >
-                <h5 class="text">Social</h5>
-
+            <div class=" container col-md-auto mr-auto">
+                <h5 class=" text-white col-12">Social</h5>
+                    <img src=" {% static 'assets/icon_insta.svg' %} ">
+                    <img src=" {% static 'assets/icon_facebook.svg' %} ">
+                    <img src=" {% static 'assets/icon_twitter.svg' %} ">
+                    <img src=" {% static 'assets/icon_youtube.svg' %} ">
             </div>
             <!-- Grid column -->
 

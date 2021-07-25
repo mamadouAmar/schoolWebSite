@@ -1,4 +1,3 @@
-#imageBackground{
-    background-image: url('{% static "assets/ept_background.png" %}') 50% 0 no-repeat fixed;
-    background-image: image('{% static "assets/ept_background.png" %}');
-}
+/* body {
+    background: url("../assets/ept_background.png") 100% 0 no-repeat;
+} */
