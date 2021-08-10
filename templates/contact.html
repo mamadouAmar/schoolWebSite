@@ -2,7 +2,45 @@
 
 {% load static %}
 {% block content%}
-    <div>
-        <img src=" {% static 'assets/ept_background.png' %} " alt="ept_image" width=500>
-    </div>
+        <div class="container-fluid">
+            <h3 class="text-white bg-warning p-2">
+                Contact
+            </h3>
+            Mail: ept@ept.sn <br/>
+            Telephone : 00221 33 9511 15 48 <br/>
+            Fax : 00221 33 9511 15 48 <br/>
+        </div>
+         <div class="container-fluid">
+            <h3 class="text-white bg-warning p-2">
+                Acces
+            </h3>
+            <p> L EPT est située dans la région de Thiès (environ 70km de Dakar) sur un terrain 
+            de plus de 400 hectares. Son campus comporte des locaux d'enseignement pédagogique et de rechrche,
+            d'administration, d'eexploitation, et d'hebergement à l'usage des étudiants et d'une partie du personnel
+            </p>
+        </div>
+         <div class="container-fluid ">
+            <h3 class="text-white bg-warning p-2">
+                Localisation
+            </h3>
+            <div class="row">
+                <div class="col-md-8 col-12">
+
+        
+                </div>
+                <div class"col-md-4 col-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" class="form-control" id="adresse" placeholder="Ville/Region">
+                        </div>
+                        <div class="form-group">
+                            <label for="bp">BP</label>
+                            <input type="text" class="form-control" id="bp" placeholder="Boite Postale">
+                        </div>
+                        <button type="submit" class="btn btn-warning text-white">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 {% endblock content%}

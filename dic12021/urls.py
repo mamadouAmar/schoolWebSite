@@ -20,5 +20,8 @@ from home.views import afficher_index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("home.urls"))
+    path("", include("home.urls")),
+    path("", include('contact.urls')),
+    path("departement/", include('departement.urls')),
+    path("", include('administration.urls')),
 ]
