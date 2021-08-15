@@ -21,6 +21,13 @@ class Professeur(models.Model):
     contact_prof = models.TextField(("contact"))
     date_d_adhesion = models.DateField(("Date d'adhesion"), auto_now=False, auto_now_add=False)
 
+    class Meta:
+        verbose_name = ("Professeur")
+        verbose_name_plural = ("Professeurs")
+
+    def __str__(self):
+        return self.nom
+
 
 class Etudiant(models.Model):
     nom = models.CharField(("nom"), max_length=50)
@@ -38,7 +45,7 @@ class Etudiant(models.Model):
         return self.nom
 
  
-class matiere(models.Model):
+class Matiere(models.Model):
     libelle = models.TextField(("Libelle"))
     code = models.TextField(("code matiere"))
     coef = models.IntegerField(("coef"))
