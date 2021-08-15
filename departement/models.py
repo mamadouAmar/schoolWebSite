@@ -16,7 +16,9 @@ class DepartementModel(models.Model):
 
 
 class Professeur(models.Model):
-    contact_prof = models.PhoneNumberField(("contact"))
+    nom = models.CharField(("nom"), max_length=50)
+    mail = models.EmailField(("mail"), max_length=254)
+    contact_prof = models.TextField(("contact"))
     date_d_adhesion = models.DateField(("Date d'adhesion"), auto_now=False, auto_now_add=False)
 
 
@@ -56,8 +58,8 @@ class UE(models.Model):
     code = models.TextField(("code"))
 
     class Meta:
-        verbose_name = _("UE")
-        verbose_name_plural = _("UEs")
+        verbose_name = ("UE")
+        verbose_name_plural = ("UEs")
 
     def __str__(self):
         return self.libelle
